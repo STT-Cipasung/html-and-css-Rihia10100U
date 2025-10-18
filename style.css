@@ -28,8 +28,7 @@ body {
   border-bottom: #1a8bbc 2px solid;
 }
 .section {
-  margin: 10px 0px;
-  font-family: Arial;
+  margin: 10px;
   font-size: 12px;
   text-align: justify;
   background-color: rgb(245, 245, 245);
@@ -37,7 +36,24 @@ body {
   padding: 20px 20px;
   border-left: 5px solid rgba(6, 87, 239, 0.76);
 }
+.section1 {
+  margin: 10px;
+  font-size: 12px;
+  text-align: justify;
+  background: linear-gradient(to right, #f64747, #d8cece);
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+.section2 {
+  margin: 10px;
+  font-size: 12px;
+  text-align: justify;
+  background: linear-gradient(to right, #1b9ad183, #a602a668);
+  border-radius: 10px;
+  padding: 20px 20px;
+}
 .key-points {
+  margin: 10px;
   background: linear-gradient(to right, #1b9ad183, #a602a668);
   padding: 5px 10px;
   border-radius: 6px;
@@ -73,13 +89,6 @@ body {
   border-radius: 4px;
   font-weight: bold;
   font-family: Arial;
-}
-.structure-breakdown {
-  margin: 10px 0px;
-  background: linear-gradient(to right, #1b9ad183, #a602a668);
-  padding: 5px 10px;
-  border-radius: 6px;
-  border-left: 2px solid #fd000083;
 }
 
 .table {
@@ -136,17 +145,56 @@ tr:last-child td:last-child {
   font-size: 20px;
 }
 .box {
+  margin: 10px;
   border: 1.6px dashed #1a8bbc;
-  padding: 10px 10px;
+  padding: 10px;
   border-radius: 10px;
 }
-
-.-box input,
+.box input,
+.box select,
+.box textarea,
+.form-box input,
 .form-box select,
 .form-box textarea {
-  padding: 0.6rem;
+  display: block;
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
   border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.box button,
+.form-box button {
+  background-color: #1a8bbc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
   border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.box button:hover,
+.form-box button:hover {
+  background-color: #156fa1;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #6b5bff, #6ec9ff);
+  color: #fff;
+}
+
+.footer h2 {
+  margin: 10px;
+}
+
+.footer p {
+  font-size: 12px;
 }
 
 @media screen and (max-width: 768px) {
@@ -176,5 +224,18 @@ tr:last-child td:last-child {
 
   .code-block pre {
     font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .section,
+  .section1,
+  .section2,
+  .box,
+  .code-block {
+    padding: 1rem;
   }
 }
