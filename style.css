@@ -1,5 +1,13 @@
 body {
-  background-color: rgba(230, 230, 230, 0.342);
+  background-color: rgba(255, 3, 255, 0.945);
+  padding: 10px 10px;
+  margin: 0px 100px;
+}
+
+.page {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 10px;
 }
 .header {
   font-family: Arial;
@@ -20,10 +28,11 @@ body {
   border-bottom: #1a8bbc 2px solid;
 }
 .section {
+  margin: 10px 0px;
   font-family: Arial;
   font-size: 12px;
   text-align: justify;
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   border-radius: 10px;
   padding: 20px 20px;
   border-left: 5px solid rgba(6, 87, 239, 0.76);
@@ -64,4 +73,108 @@ body {
   border-radius: 4px;
   font-weight: bold;
   font-family: Arial;
+}
+.structure-breakdown {
+  margin: 10px 0px;
+  background: linear-gradient(to right, #1b9ad183, #a602a668);
+  padding: 5px 10px;
+  border-radius: 6px;
+  border-left: 2px solid #fd000083;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-radius: 8px;
+}
+
+.table th {
+  background: linear-gradient(to right, #1a8bbccd, #1a8bbc);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+.table td {
+  border-bottom: 1px solid #d8d6d6;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+th:first-child {
+  border-top-left-radius: 8px;
+}
+
+th:last-child {
+  border-top-right-radius: 8px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+.list-items {
+  margin: 10px 0px;
+  font-family: Arial;
+  font-size: 12px;
+  text-align: justify;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px 20px;
+  border-left: 5px solid rgba(6, 87, 239, 0.76);
+}
+
+.header1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+.box {
+  border: 1.6px dashed #1a8bbc;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.-box input,
+.form-box select,
+.form-box textarea {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .header2 {
+    font-size: 1rem;
+  }
+
+  .code-label {
+    font-size: 0.65rem;
+    top: 6px;
+    right: 10px;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .code-block pre {
+    font-size: 0.7rem;
+  }
 }
